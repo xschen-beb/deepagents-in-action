@@ -77,65 +77,88 @@
     "published": true,
     "pubDate": "2026-05-25"
   },
-  "ch07-long-term-memory": {
-    "title": "长期记忆 — 让 Agent 拥有跨对话的记忆",
-    "chapter": 7,
-    "section": "进阶篇",
+  "ch07-agentseek-create": {
+    "title": "AgentSeek CLI（上）— 用 create 命令快速搭建模板应用",
+    "chapter": 0,
+    "section": "准备篇",
     "order": 7,
+    "description": "安装 AgentSeek CLI，使用 agentseek create 一条命令拉取并运行预制的 Agent 应用模板，配置环境变量与 LangSmith Tracing，前后端联调验证。",
+    "slides": [
+      { "id": "ch07", "title": "AgentSeek CLI — create 模板应用", "bilibili": "https://www.bilibili.com/video/BV1cYEt6FEAq/" }
+    ],
+    "published": true,
+    "pubDate": "2026-06-08"
+  },
+  "ch08-agentseek-skills": {
+    "title": "AgentSeek CLI（下）— 用 skills 命令安装开发辅助技能",
+    "chapter": 0,
+    "section": "准备篇",
+    "order": 8,
+    "description": "通过 agentseek skills 安装 LangChain 开发指南和 LangSmith Trace 技能，让 AI 编码助手在开发过程中提供框架级的专业指导。",
+    "slides": [
+      { "id": "ch08", "title": "AgentSeek CLI — skills 开发技能" }
+    ],
+    "published": false
+  },
+  "ch09-long-term-memory": {
+    "title": "长期记忆 — 让 Agent 拥有跨对话的记忆",
+    "chapter": 9,
+    "section": "进阶篇",
+    "order": 9,
     "description": "理解 LangGraph 的两种持久化机制，以及如何用 CompositeBackend 实现跨会话记忆。",
     "slides": [],
     "published": false
   },
-  "ch08-human-in-the-loop": {
+  "ch10-human-in-the-loop": {
     "title": "Human-in-the-Loop — 构建安全的人机协作流程",
-    "chapter": 8,
+    "chapter": 10,
     "section": "进阶篇",
-    "order": 8,
+    "order": 10,
     "description": "利用 LangGraph 的中断机制，为敏感操作添加人工审批。按风险等级分层的最佳实践。",
     "slides": [],
     "published": false
   },
-  "ch09-skills": {
+  "ch11-skills": {
     "title": "Skills — 可复用的 Agent 能力包",
-    "chapter": 9,
+    "chapter": 11,
     "section": "进阶篇",
-    "order": 9,
+    "order": 11,
     "description": "通过 Agent Skills 规范为 Agent 添加可复用的专业能力。Lazy Loading 机制与 Skills vs Tools 的选择。",
     "slides": [],
     "published": false
   },
-  "ch10-sandboxes": {
+  "ch12-sandboxes": {
     "title": "沙箱执行 — 让 Agent 安全地运行代码",
-    "chapter": 10,
+    "chapter": 12,
     "section": "进阶篇",
-    "order": 10,
+    "order": 12,
     "description": "使用远程沙箱环境安全地执行 Agent 生成的代码。Modal、Daytona、Runloop 三大提供商。",
     "slides": [],
     "published": false
   },
-  "ch11-streaming-frontend": {
+  "ch13-streaming-frontend": {
     "title": "实时流式输出与前端集成",
-    "chapter": 11,
+    "chapter": 13,
     "section": "实战篇",
-    "order": 11,
+    "order": 13,
     "description": "实现 Agent 的实时流式输出，并用 React 构建可视化前端。多种 Streaming 模式与自定义事件。",
     "slides": [],
     "published": false
   },
-  "ch12-data-analysis-agent": {
+  "ch14-data-analysis-agent": {
     "title": "实战项目 — 构建数据分析 Agent",
-    "chapter": 12,
+    "chapter": 14,
     "section": "实战篇",
-    "order": 12,
+    "order": 14,
     "description": "综合运用前面所学，构建一个完整的数据分析 Agent。沙箱后端、子 Agent 协作、LangSmith 追踪。",
     "slides": [],
     "published": false
   },
-  "ch13-cli-deployment": {
+  "ch15-cli-deployment": {
     "title": "Deep Agents CLI 与生产部署",
-    "chapter": 13,
+    "chapter": 15,
     "section": "实战篇",
-    "order": 13,
+    "order": 15,
     "description": "CLI 工具使用指南 + 从开发到生产的部署路径。LangGraph Platform、ACP、模型选择策略。",
     "slides": [],
     "published": false
