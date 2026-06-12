@@ -26,6 +26,20 @@
 
 ## 课程大纲
 
+### 推荐技能
+
+配合课程学习，推荐安装以下两个 AI 编码助手技能，在开发过程中获得框架级的专业指导：
+
+```bash
+# LangChain 开发指南 — 工程陷阱与验证修复
+npx skills add ob-labs/agentseek --skill langchain-dev-guide
+
+# LangSmith Trace 调试 — 追踪与性能分析
+npx skills add ob-labs/agentseek --skill langsmith-trace
+```
+
+> 技能源码：[langchain-dev-guide](https://github.com/ob-labs/agentseek/tree/main/skills/langchain-dev-guide) · [langsmith-trace](https://github.com/ob-labs/agentseek/tree/main/skills/langsmith-trace)
+
 ### 准备篇 — 动手实操前的环境搭建与工具安装
 
 基于 [AgentSeek](https://github.com/ob-labs/agentseek) 工程化套件，帮助学员快速搭建开发环境：
@@ -49,7 +63,14 @@
 | 第 5 章 | [子 Agent 与上下文隔离 — 让 Agent 学会委派](https://webup.github.io/deepagents-course/chapters/ch05-subagents/) |
 | 第 6 章 | [异步子 Agent — 让主 Agent 同时驱动多个子任务](https://webup.github.io/deepagents-course/chapters/ch06-async-subagents/) |
 
-后续还有进阶篇（长期记忆、Human-in-the-Loop、Skills、沙箱执行）和实战篇（流式前端、数据分析 Agent、生产部署）正在规划中，持续更新。
+### 进阶篇
+
+| 章节 | 标题 |
+|------|------|
+| 第 7 章 | [Skills — 可复用的 Agent 能力包](https://webup.github.io/deepagents-course/chapters/ch07-skills/) |
+| 第 8 章 | [长期记忆 — 让 Agent 拥有跨对话的记忆](https://webup.github.io/deepagents-course/chapters/ch08-long-term-memory/) |
+
+后续还有 Human-in-the-Loop、沙箱执行等进阶内容，以及实战篇（流式前端、数据分析 Agent、生产部署）正在规划中，持续更新。
 
 ---
 
