@@ -174,6 +174,13 @@ deepagents-in-action/
   <sub>3 commits</sub>
 </td>
 <td align="center" valign="top" width="120">
+  <a href="https://github.com/Spr1ng7">
+    <img src="https://avatars.githubusercontent.com/u/188573471?v=4&s=144" width="72" height="72" alt="Spr1ng7" style="border-radius:50%;" /><br />
+    <sub><strong>Spr1ng7</strong></sub>
+  </a><br />
+  <sub>2 commits</sub>
+</td>
+<td align="center" valign="top" width="120">
   <a href="https://github.com/1iyouzhen">
     <img src="https://avatars.githubusercontent.com/u/184539312?v=4&s=144" width="72" height="72" alt="1iyouzhen" style="border-radius:50%;" /><br />
     <sub><strong>1iyouzhen</strong></sub>
@@ -191,13 +198,6 @@ deepagents-in-action/
   <a href="https://github.com/dongyu23">
     <img src="https://avatars.githubusercontent.com/u/101914323?v=4&s=144" width="72" height="72" alt="dongyu23" style="border-radius:50%;" /><br />
     <sub><strong>dongyu23</strong></sub>
-  </a><br />
-  <sub>1 commit</sub>
-</td>
-<td align="center" valign="top" width="120">
-  <a href="https://github.com/Spr1ng7">
-    <img src="https://avatars.githubusercontent.com/u/188573471?v=4&s=144" width="72" height="72" alt="Spr1ng7" style="border-radius:50%;" /><br />
-    <sub><strong>Spr1ng7</strong></sub>
   </a><br />
   <sub>1 commit</sub>
 </td>
