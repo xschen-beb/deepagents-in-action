@@ -22,13 +22,18 @@
 
 ---
 
-> [!NOTE]
+> [!WARNING]
 > 本课程讲授的 Deep Agents 版本为 **≥ 0.5**。
 > 部分进阶功能有更高最低版本要求，章节正文会单独标注；例如 `FilesystemPermission` 基础权限需要 `deepagents>=0.5.2`，`interrupt` 权限模式需要 `deepagents>=0.6.8`。
 > 官方文档：[Deep Agents Overview](https://docs.langchain.com/oss/python/deepagents/overview)
 
 > [!NOTE]
-> **模型选择**：示例默认通过 [硅基流动](https://cloud.siliconflow.cn/) 接入模型。入门与简单任务使用免费的 `Qwen/Qwen2.5-7B-Instruct` 即可；但任务规划、上下文总结、多子 Agent 编排等复杂场景，小模型往往**无法稳定跑通**，请改用 SOTA 模型 `Pro/zai-org/GLM-5.1`。建议用 `MODEL_NAME` 环境变量管理模型名，而非写死在代码里。平台模型会不定期上下线，最新可用模型见 [模型广场](https://cloud.siliconflow.cn/models)。
+> **🤖 模型选择**：示例默认通过 [硅基流动](https://cloud.siliconflow.cn/i/Fq9zUwPf) 接入模型。建议用 `MODEL_NAME` 环境变量管理模型名，而非写死在代码里；平台模型会不定期上下线，最新可用模型见 [模型广场](https://cloud.siliconflow.cn/models)。
+>
+> - **入门 / 简单任务** — 免费的 `Qwen/Qwen2.5-7B-Instruct` 即可跑通。
+> - **复杂场景**（任务规划、上下文总结、多子 Agent 编排）— 小模型往往**无法稳定跑通**，需改用 SOTA 模型：
+>   - 🔥 `nex-agi/Nex-N2-Pro` — 能动性思考模型，开源 SOTA，**当前限免**，复杂任务首选
+>   - `Pro/zai-org/GLM-5.1` — 智谱旗舰，Agent 任务同类最佳
 
 ---
 
@@ -90,6 +95,34 @@ npx skills add ob-labs/agentseek --skill langsmith-trace
 
 ---
 
+## 友情链接
+由 **[沧海九粟](https://space.bilibili.com/28357052)** 在 DataWhale 上开源的另一门课程，是面向所有 AI 爱好者的 Data 与 AI 基础入门教程 —— [《Easy Data x AI》](https://github.com/datawhalechina/easy-data-x-ai)。目前已经进入了内测阶段，欢迎大家来学习和积极参与共建。
+
+---
+
+## 模型算力支持
+
+<table>
+<tr>
+<td width="180" align="center" valign="middle">
+<a href="https://cloud.siliconflow.cn/i/Fq9zUwPf" target="_blank" rel="noopener">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="public/imgs/siliconflow-dark.svg" />
+    <img src="public/imgs/siliconflow.svg" alt="SiliconFlow 硅基流动" width="150" />
+  </picture>
+</a>
+</td>
+<td valign="middle">
+本课程的模型算力由 <strong><a href="https://cloud.siliconflow.cn/i/Fq9zUwPf">硅基流动（SiliconFlow）</a></strong> 支持。硅基流动是一站式大模型云服务平台，基于自研推理引擎实现大模型高效推理加速，提供高效能、低成本的多品类 AI 模型服务，让开发者和企业聚焦产品创新，无须担心大规模推广带来的高昂算力成本。
+</td>
+</tr>
+</table>
+
+- 🎁 **新用户福利**：通过 [课程专属注册链接](https://cloud.siliconflow.cn/i/Fq9zUwPf) 注册并完成实名认证，即可获得 **16 元全平台通用代金券**，可用于平台上百余种模型的调用，足够跑通本课程的全部示例。
+- 🧪 **实验配额补贴池**：用上面的链接注册时，作者也会获得平台返利。这部分返利会**全额回馈给学员**——汇集成一个「实验配额补贴池」：跟着课程做实验、复现示例时如果额度不够用，可以[联系作者](https://space.bilibili.com/28357052)申请额外的算力配额补贴，把福利转回给真正在动手的同学。
+
+---
+
 ## 贡献者墙
 
 <!-- contributors:start -->
@@ -100,7 +133,7 @@ npx skills add ob-labs/agentseek --skill langsmith-trace
     <img src="https://avatars.githubusercontent.com/u/2936504?v=4&s=144" width="72" height="72" alt="webup" style="border-radius:50%;" />
   </a><br />
   <a href="https://github.com/webup" title="打开 webup 的 GitHub 主页"><kbd><strong>webup</strong></kbd></a><br />
-  <sub>48 commits</sub>
+  <sub>55 commits</sub>
 </td>
 <td align="center" valign="top" width="104">
   <a href="https://github.com/Spr1ng7" title="Spr1ng7">
@@ -115,6 +148,13 @@ npx skills add ob-labs/agentseek --skill langsmith-trace
   </a><br />
   <a href="https://github.com/knqiufan" title="打开 knqiufan 的 GitHub 主页"><kbd><strong>knqiufan</strong></kbd></a><br />
   <sub>3 commits</sub>
+</td>
+<td align="center" valign="top" width="104">
+  <a href="https://github.com/YangLeeFangfei" title="YangLeeFangfei">
+    <img src="https://avatars.githubusercontent.com/u/111680955?v=4&s=144" width="72" height="72" alt="YangLeeFangfei" style="border-radius:50%;" />
+  </a><br />
+  <a href="https://github.com/YangLeeFangfei" title="打开 YangLeeFangfei 的 GitHub 主页"><kbd><strong>YangLeeFang…</strong></kbd></a><br />
+  <sub>2 commits</sub>
 </td>
 <td align="center" valign="top" width="104">
   <a href="https://github.com/1iyouzhen" title="1iyouzhen">
@@ -138,22 +178,50 @@ npx skills add ob-labs/agentseek --skill langsmith-trace
   <sub>1 commit</sub>
 </td>
 <td align="center" valign="top" width="104">
-  <a href="https://github.com/Walt-like" title="Walt-like">
-    <img src="https://avatars.githubusercontent.com/u/56186222?v=4&s=144" width="72" height="72" alt="Walt-like" style="border-radius:50%;" />
+  <a href="https://github.com/liboyang0730" title="liboyang0730">
+    <img src="https://avatars.githubusercontent.com/u/13233790?v=4&s=144" width="72" height="72" alt="liboyang0730" style="border-radius:50%;" />
   </a><br />
-  <a href="https://github.com/Walt-like" title="打开 Walt-like 的 GitHub 主页"><kbd><strong>Walt-like</strong></kbd></a><br />
+  <a href="https://github.com/liboyang0730" title="打开 liboyang0730 的 GitHub 主页"><kbd><strong>liboyang073…</strong></kbd></a><br />
+  <sub>1 commit</sub>
+</td>
+</tr>
+<tr>
+<td align="center" valign="top" width="104">
+  <a href="https://github.com/ThingsWorld" title="ThingsWorld">
+    <img src="https://avatars.githubusercontent.com/u/24755216?v=4&s=144" width="72" height="72" alt="ThingsWorld" style="border-radius:50%;" />
+  </a><br />
+  <a href="https://github.com/ThingsWorld" title="打开 ThingsWorld 的 GitHub 主页"><kbd><strong>ThingsWorld</strong></kbd></a><br />
   <sub>1 commit</sub>
 </td>
 <td align="center" valign="top" width="104">
-  <a href="https://github.com/YangLeeFangfei" title="YangLeeFangfei">
-    <img src="https://avatars.githubusercontent.com/u/111680955?v=4&s=144" width="72" height="72" alt="YangLeeFangfei" style="border-radius:50%;" />
+  <a href="https://github.com/Walt-like" title="Walt-like">
+    <img src="https://avatars.githubusercontent.com/u/56186222?v=4&s=144" width="72" height="72" alt="Walt-like" style="border-radius:50%;" />
   </a><br />
-  <a href="https://github.com/YangLeeFangfei" title="打开 YangLeeFangfei 的 GitHub 主页"><kbd><strong>YangLeeFang…</strong></kbd></a><br />
+  <a href="https://github.com/Walt-like" title="打开 Walt-like 的 GitHub 主页"><kbd><strong>Walt‑like</strong></kbd></a><br />
+  <sub>1 commit</sub>
+</td>
+<td align="center" valign="top" width="104">
+  <a href="https://github.com/xschen-beb" title="xschen-beb">
+    <img src="https://avatars.githubusercontent.com/u/61721839?v=4&s=144" width="72" height="72" alt="xschen-beb" style="border-radius:50%;" />
+  </a><br />
+  <a href="https://github.com/xschen-beb" title="打开 xschen-beb 的 GitHub 主页"><kbd><strong>xschen‑beb</strong></kbd></a><br />
   <sub>1 commit</sub>
 </td>
 </tr>
 </table>
 <!-- contributors:end -->
+
+---
+
+## Star History
+
+<a href="https://www.star-history.com/?repos=datawhalechina%2Fdeepagents-in-action&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=datawhalechina/deepagents-in-action&type=date&theme=dark&legend=top-left" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=datawhalechina/deepagents-in-action&type=date&legend=top-left" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=datawhalechina/deepagents-in-action&type=date&legend=top-left" />
+ </picture>
+</a>
 
 ---
 

@@ -118,12 +118,20 @@ try {
           <div class="h-px flex-1 bg-gradient-to-l from-transparent to-gold/20 hidden sm:block"></div>
         </div>
 
+        <!-- Compute support -->
+        <a href="https://cloud.siliconflow.cn/i/Fq9zUwPf" target="_blank" rel="noopener"
+          class="group mt-5 inline-flex items-center gap-2 text-ink-muted/50 hover:text-ink-muted transition-colors">
+          <span class="text-[11px] font-mono tracking-wide uppercase">模型算力支持</span>
+          <span class="w-px h-3 bg-ink-muted/20 inline-block"></span>
+          <img src={`${import.meta.env.BASE_URL}/imgs/siliconflow-mark.svg`} alt="" class="h-3.5 opacity-70 group-hover:opacity-100 transition-opacity" />
+          <span class="text-xs font-medium">硅基流动 SiliconFlow</span>
+        </a>
+
       </div>
     </section>
 
-    <div class="chapter-grid lg:grid lg:grid-cols-[220px_minmax(0,1fr)] lg:gap-12 lg:items-start">
-      <ChapterRail sections={railSections} />
-      <div class="min-w-0">
+    <ChapterRail sections={railSections} />
+    <div class="min-w-0">
     <!-- Chapter list by section -->
     {grouped.map(({ section, chapters }) => {
       const hasPublished = chapters.some(ch => ch.data.published);
@@ -197,20 +205,9 @@ try {
       ) : null;
     })}
       </div>
-    </div>
   </main>
   <Footer />
 </BaseLayout>
-
-<style>
-  /* On wide screens the rail detaches into the left gutter so the chapter
-     cards recenter to main's full width (aligned with the centered hero).
-     Below this width there isn't enough gutter, so the grid keeps its
-     default 220px squeeze-in column (see lg: classes on .chapter-grid). */
-  @media (min-width: 1600px) {
-    .chapter-grid { display: block; }
-  }
-</style>
 
 
 <script>
